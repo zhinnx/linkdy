@@ -128,7 +128,7 @@
   <div class="container">
     <h1>S.O Short Linkdy</h1>
     <p>Enter the link you want to shorten:</p>
-    <input type="text" id="userLink" placeholder="google.com" required>
+    <input type="text" id="userLink" placeholder="zhinnx.github.io" required>
     <select id="serviceSelect">
       <option value="bitly">bit.ly</option>
       <option value="cuttly">cutt.ly</option>
@@ -180,7 +180,7 @@
 
           resultDiv.innerHTML = `
             Short link: <a href="${shortLink}" target="_blank">${shortLink}</a>
-            <button class="copy-button" onclick="copyToClipboard('${shortLink}')">Salin Link</button>
+            <button class="copy-button" onclick="copyToClipboard('${shortLink}')">Copy Link</button>
           `;
         } else {
           errorDiv.innerHTML = "Failed to shorten link. Please try again later..";
